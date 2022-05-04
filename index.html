@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tour.com</title>
+		<meta charset="utf-8">
+		<!-- <meta http-equiv="Refresh" content="2"> -->
+<style>
+body {
+	margin: 0;
+	font-family: monospace; sans-serif; 
+	font-size: 15px;
+	line-height: 1.5;
+	color: lightpink; 
+}
+
+h1,h2 {margin: 0;}
+
+*,
+*:before
+*:after {
+	box-sizing: border-box;
+}
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+.intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	height: 150vh;
+
+	background-color: lightskyblue;  
+	background-size: cover;
+}
+.intro_inner {
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: center;
+	padding:30px;
+}
+.intro_title {	
+	color: pink;
+	font-size: 100px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 1;
+	margin: 60 auto;
+    padding: 30px;
+}
+.intro_title:after {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	margin: 60px auto 0;
+	background-color: yellow;
+}
+
+.header {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	padding-top: 30px;
+}
+.header_inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav {
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.nav_link {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 15px;
+
+	color: darkblue;
+	text-decoration: none;
+	transition: color .2s linear;
+	position: relative;
+}
+.nav_link:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 3px;
+	
+	background-color: yellow;
+	opacity: 0;	
+
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1;
+	transition: opacity .1s linear;
+}
+.nav_link:hover {
+	color: yellow;}
+
+.nav_link:hover:after,
+.nav_link.active:after {
+	opacity: 1;
+}
+
+.nav_link.active {
+	color: yellow;
+}	
+
+.btn {
+	display: inline-block;
+	vertical-align: top;
+	padding: 8px 30px;
+	border: 3px solid lightgreen;
+	color: white;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: background .1s linear, color.1s linear;
+}
+.btn:hover { 
+	background-color: lightsalmon;
+	color: lightgreen;
+}
+.slider { 
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+.slider_inner {
+	display: flex;
+	justify-content: space-between;	
+}
+.slider_item {
+	width: 25%; 
+	font-size: 20px;
+	position: relative;
+	color: white;
+	text-transform: uppercase;
+	padding: 20px 0;
+	border-top: 3px solid lightgreen;
+}
+.slider_item.active {
+	opacity: 1; 
+}
+.slider_item.active:before {
+	content: "";
+	display: block;
+	width: 70px;
+	height: 3px;
+	background-color: red;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    z-index: 1;
+}
+.slide_num {
+	font-size: 25px;
+	font-weight: 700;
+}
+img {
+	width: 20%;
+	display: flex;
+	justify-content: left;
+}
+
+.blok {
+    text-align: center;
+    width: 300px; 
+    height: 150px;
+    margin:  30px auto; 
+
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    background: lightpink; 
+    border: 1px solid #000; 
+    padding: 10px;  
+    font-size: 14px;  
+   }
+
+</style>
+</head>
+<body>
+
+	<header class="header">
+		<div class="container">
+			<div class="header_inner">
+				<div class="header_logo"><img src=C:\Users\User\Desktop\img\333.png></div>
+
+<nav class="nav">
+   	   <a class="nav_link" href="file:///C:/Users/User/Desktop/sait/News.html">News</a>
+   	   <a class="nav_link" href="file:///C:/Users/User/Desktop/sait/Services.html">Service</a>
+   	   <a class="nav_link" href="file:///C:/Users/User/Desktop/sait/about.html">About</a>
+   	   <a class="nav_link" href="file:///C:/Users/User/Desktop/sait/contact.html">Contact</a>
+</nav>	
+   </div>
+      </div>
+      <marquee behavior="scroll" direction="left"><span style="color: lightcoral;"><em> Let's Enjoy Your Trip </em></span></marquee>
+</header>
+
+<div class="intro">
+<div class="container">
+	<div class="intro_inner">		
+     <h1 class="intro_title"><i>Welcome to Beautiful Tour</i></h1>
+
+     <a class="btn" href="#">Learn More</a>
+</div> 
+
+<div class="slider">
+<div class="container">
+	<div class="slider_inner">
+<div class="slider_item active">
+	<span class="slider_num"><b>300+ Destinations</b></span>
+	<br><small>The largest variety of destinations. For every taste and budget</small>
+</div>
+<div class="slider_item">
+	<span class="slider_num"><b>The best prices</b></span>
+	<br><small>We offer the most affordable prices on the market</small>
+</div>
+<div class="slider_item">
+	<span class="slider_num"><b>90.000+ Likes on Facebook</b></span>
+	<br><small>The most popular Travel Agency in Moldova</small>
+</div>
+<div class="slider_item">
+	<span class="slider_num"><b>110.000+ Clients</b></span>
+	<br><small>110.000 clients were satisfied with our services</small>
+
+<div class="blok">
+	<h3>Login to your office</h3>
+<form>  
+<p>
+	<label class="label_login" for="j_username">Enter your Name*</label>	
+    <input class="input" name="name" ENGINE="text" style="width:50%">
+</p>
+<p>
+	<label for="pin"> Enter your PIN:</label>
+	<input type="text" id="pin" name="pin" placeholder="****" pattern="[0-9]{4}" maxlength="4" size="4" style="width:50%">
+</p>
+<input id="submit" value="Send" type="submit">
+</form>
+</div>
+  
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>

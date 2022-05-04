@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>Contact</title>
+<meta charset="utf-8">
+      <!-- <meta http-equiv="Refresh" content="2"> -->
+<style>
+   body {background: lightsalmon;}
+ 
+   .blok-center {
+    position: absolute; 
+    width: 600px; 
+    height: 400px;
+    margin:  auto; 
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    background: #fc0; 
+    border: 1px solid #000; 
+    padding: 10px; 
+    overflow: auto; 
+   }
+   .btn {
+   display: inline-block;
+   padding: 10px 30px;
+   border: 3px solid yellow;
+   color: yellow;
+   font-size: 14px;
+   font-weight: 700;
+   text-transform: uppercase;
+   text-decoration: none;
+   transition: background .1s linear, color.1s linear;
+}
+.btn:hover { 
+   background-color: lightblue;
+}  
+.nav {
+   font-size: 14px;
+   text-transform: uppercase;
+   text-align: right; 
+   padding-top: 20px;
+   padding-right: 30px;
+}
+.nav_link {
+   text-decoration: none;
+   display: inline-block;
+   font-size: 20px;
+   margin: auto;
+   color: yellow;
+   background-color: green;
+}
+.nav_link:hover {
+   background-color: lightsalmon;
+   text-decoration: underline; 
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+<a class="nav_link" href="#"><b>373 (79) 50-09-01</b></a>
+</nav>
+
+<div class="blok-center">
+<form>  
+<p>Name*<br>
+<input class="input" name="name" ENGINE="text" style="width:60%"></p>
+<p>Email*<br>
+<input class="input" name="email" type="text" style="width:60%"></p>
+<p>Message subject:<br>
+<input class="input" name="sub" type="text" style="width:60%"></p>
+<p>Message text:<br><textarea name="body" cols="1" rows="5" style="width:60%"></textarea></p>
+<p><input id="submit" value="Send" type="submit"></p>
+</form>
+</div>
+
+<a class="btn" href="file:///C:/Users/User/Desktop/sait/index.html">Back</a>
+</body>
+</html>
